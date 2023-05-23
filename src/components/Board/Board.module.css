@@ -1,22 +1,38 @@
 .container {
-
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.clear {}
 
-.controls {}
+.controls {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .board {}
 .map {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
+    grid-gap: 0;
     list-style: none;
     width: min-content;
 }
 .cell {
     display: block;
-    width: 40px;
-    height: 40px;
-    background: #61dafb;
+    width: 140px;
+    height: 140px;
+    background: transparent;
+    border: 2px solid black;
     text-align: center;
-    line-height: 40px;
+    line-height: 140px;
+    font-size: 7rem;
+}
+.span {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
 }

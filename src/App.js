@@ -1,16 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import {ConnectButton} from "./components/ConnectButton";
-import {CloseButton} from "./components/CloseButton";
-import {PingButton} from "./components/PingButton";
 import {Board} from "./components/Board/Board";
+import {Header} from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <ConnectButton/>
-      <CloseButton/>
-      <Board/>
+        <Header/>
+        <Board/>
     </div>
   );
 }
